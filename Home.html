@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  @media(max-width:767px){
+  div.logo{
+    clip-path: inset(1% 55% 0% 0%);
+  }
+ }
+ @media(max-width:767px) {
+   .navbar-nav{
+    padding-left:1px;
+   }
+  }
+  @media(max-width:767px) {
+   .line{
+    display: none;
+   }
+  }
+  .carousel-indicators{
+    margin-bottom: 1px;
+  }
+  .men{
+    text-align: center;
+  }
+  .color{
+    background-color:#C4E8EC;
+  }
+  .space{
+    background-color:#C4E8EC;
+  }
+  .bg{
+    background-color:#F4E4EB;
+  }
+  .container{
+    margin-top:10px !important;
+  }
+  .card{
+    border: none;
+    outline:none;
+    background-color:white;
+    border-radius: 20px; 
+    transition: transform .4s; 
+  }
+ .card:hover{
+ transform: translateY(-15px);
+ transition: transform .3s;
+ }
+ .nav-item:hover{
+  transform: translateY(-5px);
+ transition: transform .2s;
+ }
+ .text1{
+  font-size: 13px;
+  color:rgb(147, 147, 147)
+ }
+ .info{
+  line-height: 17px;
+ }
+ .star{
+  color:#fbc02d;
+ }
+ .cost span{
+  color:black;
+  font-weight: bold;
+  font-size:20px;
+ }
+ .blue{
+  background: rgb(36, 137, 205);
+ }
+ .orange{
+  background: rgb(255, 93, 93);
+ }
+ .pant:hover{
+  opacity: .8;
+ }
+ .cursor{
+  cursor:pointer;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius:20px;
+ }
+ h5{
+  margin-top: 40px;
+ }
+ .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #787fff;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md py-2   bg-light navbar-light sticky-top shadow-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Home.html">
+        <div class="logo mx-5">
+        <img src="Myntra.png" alt="" width="167" height="50">
+        </div> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mx-5">
+        <li class="nav-item me-3">
+          <a style="font-size:23px;color:rgb(40, 111, 203);" class="nav-link" href="#">Home</a>
+        </li>
+        <li class="line me-2">
+          <a style="font-size:20px; color: rgba(138, 138, 138, 0.251);" class="nav-link" href="#">|</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a style="font-size:23px;color: black;" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#boys">Men</a>
+            <a class="dropdown-item" href="#girls">Women</a>
+           
+          </div>
+        </li>
+          <li class="line me-2">
+            <a style="font-size:20px; color: rgba(138, 138, 138, 0.251);" class="nav-link" href="#">|</a>
+          </li>
+        <li class="nav-item me-3">
+          <a style="font-size:23px;color: black;" class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="line me-2">
+          <a style="font-size:20px; color: rgba(138, 138, 138, 0.251);" class="nav-link" href="#">|</a>
+        </li>
+        <li class="nav-item me-3">
+          <a style="font-size:23px;color: black;" class="nav-link" href="contact.html">Contact</a>
+        </li> 
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  
+<div>
+  <img src="OFF3.jpg" class="mx-auto d-block" style="width:100%"> 
+</div>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="ss4.png" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <a href="#boys"><img src="ss1.png" alt="Chicago" class="d-block" style="width:100%"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="#girls"><img src="ss2.png" alt="New York" class="d-block" style="width:100%"></a>
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+<div class="color">
+<div class="container1">
+ 
+    
+   
+    <br id="boys">
+    <img src="gents.png" class="mx-auto d-block" style="width:100%"> 
+
+    <div class="container mb-3 mt-5">
+    <div class="row">
+<!--card-1-->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="card mt-1">
+    <div class="porduct-1 align-items-center p-3 text-center">
+      <img src="M1.png" class="rounded" width="150">
+      <h5 class="mt-3">Max-Chinos</h5>
+
+      <div class="mt-3 info">
+        <span class="text1 d-block">Men Grey-Tapered Fit Chinos</span>
+      </div>
+      <div class="mt-2 info">
+        <span class="text"></span>
+      </div>
+      <div class="cost mt-2 text-dark">
+        <span>Rs.899</span>
+      </div>
+    </div> 
+ <div class="p-3 blue text-center text-white cursor">
+  <span class="text" >View Product</span>
+ </div>
+</div>
+</div>
+      <!--card-2-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-1">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M2.png" class="rounded" width="150">
+            <h5 class="mt-3">Highlander T-shirt</h5>
+
+            <div class="mt-3 info">
+              <span class="text1 d-block">Highlander Men White T-shirt</span>
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.499</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      <!--card-3-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-1">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M3.png" class="rounded" width="150">
+            <h5 class="mt-3">DW Men Watch</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">Daniel Wellington Men Watch</span>
+              
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.1149</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      <!--card-4-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-1">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M4.png" class="rounded" width="150">
+            <h5 class="mt-3">Rebook Shoe</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">White-Rebook Men Running Shoe</span>
+             
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.1799</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      
+      <!--card-5-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-4">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M5.png" class="rounded" width="150">
+            <h5 class="mt-3">LP Jacket</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">Louis Philippe Navy-Blue Jacket</span>
+           
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.1399</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      <!--card-6-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-4">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M6.png" class="rounded" width="150">
+            <h5 class="mt-3">H&M Sweatshirt</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">H&M Grey-Sweatshirt For Men </span>
+             
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.1049</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      <!--card-7-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-4">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M7.png" class="rounded" width="150">
+            <h5 class="mt-3">Boat Headphone</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">Boat Black-Headphone With 2mm Jack</span>
+            
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.959</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      <!--card-8-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-4">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M8.png" class="rounded" width="150">
+            <h5 class="mt-3">WoodLand Wallet</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">WoolLand Wallet For Men</span>
+      
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.699</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      <!--card-9-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-4">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M9.png" class="rounded" width="150">
+            <h5 class="mt-3">D&G Perfume</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">D&G Perfume Men's Perfume</span>
+           
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.599</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      <!--card-10-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-4">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M13.png" class="rounded" width="150">
+            <h5 class="mt-3">RayBan Sunglass</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">RayBan Black-Sunglass For Men</span>
+             
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.399</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      <!--card-11-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-4">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M11.png" class="rounded" width="150">
+            <h5 class="mt-3">Track Pant</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">Adidas Blues-Men's Track Pant </span>
+              
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.799</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+      <!--card-12-->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card mt-4">
+          <div class="porduct-1 align-items-center p-3 text-center">
+            <img src="M14.png" class="rounded" width="150">
+            <h5 class="mt-3">WoodLand Belt</h5>
+      
+            <div class="mt-3 info">
+              <span class="text1 d-block">WoodLand Belt For Men</span>
+            
+            </div>
+            <div class="cost mt-2 text-dark">
+              <span>Rs.1299</span>
+            </div>
+          </div> 
+       <div class="p-3 blue text-center text-white cursor">
+        <span class="text" >View Product</span>
+       </div>
+      </div>
+      </div>
+    </div>
+   
+</div>
+</div>
+<div class="space">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+ 
+</div>
+<img src="Style5.png" class="mx-auto d-block" style="width:100%">
+<img src="Style6.png" class="mx-auto d-block" style="width:100%"> 
+
+<div class="bg" id="girls">
+  <div class="container1">
+  <br>
+ 
+
+    <img src="women.png" class="mx-auto d-block" style="width:100%">
+  
+     <div class="container mb-3 mt-5">
+      <div class="row">
+  <!--card-1-->
+  <div class="col-12 col-md-6 col-lg-3">
+    <div class="card mt-1">
+      <div class="porduct-1 align-items-center p-3 text-center">
+        <img src="W1.png" class="rounded" width="150">
+        <h5 class="mt-3">Highlander T-shirt </h5>
+  
+        <div class="mt-3 info">
+          <span class="text1 d-block">Highlander Yellow T-shirt For Women</span>
+          
+        </div>
+        <div class="cost mt-2 text-dark">
+          <span>Rs.499</span>
+        </div>
+      </div> 
+   <div class="p-3 orange text-center text-white cursor">
+    <span class="text" >View Product</span>
+   </div>
+  </div>
+  </div>
+        <!--card-2-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-1">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W2.png" class="rounded" width="150">
+              <h5 class="mt-3">Saree</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">Indian Traditional Saree</span>
+               
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.1899</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-3-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-1">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W3.png" class="rounded" width="150">
+              <h5 class="mt-3">Doodle Watch</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">Doodle Space Watch For Women</span>
+              
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.799</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-4-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-1">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W4.png" class="rounded" width="150">
+              <h5 class="mt-3">Deas Flats</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">Women Red-Mules Flats</span>
+               
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.659</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-5-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W5.png" class="rounded" width="150">
+              <h5 class="mt-3">Lee Jacket</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">Lee Cooper Navy-Blue Jacket</span>
+               
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.1299</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-6-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W6.png" class="rounded" width="150">
+              <h5 class="mt-3">DW Gag</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">Daniel Wellington Black-Bag </span>
+               
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.1099</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-7-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W7.png" class="rounded" width="150">
+              <h5 class="mt-3">H&M Heels</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">H&M Red-High Heels</span>
+                
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.759</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-8-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W13.png" class="rounded" width="150">
+              <h5 class="mt-3">Ether Blazer</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">Ether White-Blazer For Women</span>
+              
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.999</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-9-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W14.png" class="rounded" width="150">
+              <h5 class="mt-3">Sports Bra</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">Oribons Sports Bra</span>
+             
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.599</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-10-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W10.png" class="rounded" width="150">
+              <h5 class="mt-3">SkullCandy Headphones</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">White-SkullCandy Headphones</span>
+               
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.799</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-11-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W16.png" class="rounded" width="150">
+              <h5 class="mt-3">RayBan Sunglass</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">RayBan Yellow-Sunglass For Women</span>
+                
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.418</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+        <!--card-12-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="porduct-1 align-items-center p-3 text-center">
+              <img src="W12.png" class="rounded" width="150">
+              <h5 class="mt-3">Bracelet</h5>
+        
+              <div class="mt-3 info">
+                <span class="text1 d-block">Elegant Bracelet For Women</span>
+             
+              </div>
+              <div class="cost mt-2 text-dark">
+                <span>Rs.579</span>
+              </div>
+            </div> 
+         <div class="p-3 orange text-center text-white cursor">
+          <span class="text" >View Product</span>
+         </div>
+        </div>
+        </div>
+      </div>
+     </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br id="aboutus">
+</div>
+</div>
+<!--footer-->
+<footer style="background-color: rgb(32, 62, 96);" class="text-white pt-5 pb-2">
+  <div class="container text-center text-md-left">
+  <div class="row text-center text-md-left">
+  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-5">
+   <h3 style="color:#ffd978" class="text mb-4 font-weight-bold" >Myntra Pvt. Ltd.</h3>
+   <p>Myntra is a major Indian fashion <br>e-commerce company headquartered in Bengaluru, Karnataka, India.
+    <br>The company was founded in 2007 to sell personalized gift items.</p>
+  </div> 
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+    <h5 class="text mb-4 font-weight-bold" style="color:#ffd978">Help</h5>
+    <p>
+       <a href="#" class="text-white" style="text-decoration:none;">Track Orders</a>
+     </p>
+     <p>
+       <a href="#" class="text-white" style="text-decoration:none;">Recent Issues</a>
+     </p>
+     <p>
+       <a href="#" class="text-white" style="text-decoration:none;">Order Related Issues</a>
+     </p>
+     <p>
+       <a href="#" class="text-white" style="text-decoration:none;">Non-order Related Issues</a>
+     </p>
+    </p>
+   </div> <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+    <h5 class="text mb-4 font-weight-bold" style="color:#ffd978">Customer Policies</h5>
+    <p>
+       <a href="#" class="text-white" style="text-decoration:none;">FAQ</a>
+     </p>
+     <p>
+       <a href="#" class="text-white" style="text-decoration:none;">T&C</a>
+     </p>
+     <p>
+       <a href="#" class="text-white" style="text-decoration:none;">Shipping</a>
+     </p>
+     <p>
+       <a href="#" class="text-white" style="text-decoration:none;">Contact Us</a>
+     </p>
+    </p>
+   </div>
+   <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+    <h5 class="text mb-4 font-weight-bold" style="color:#ffd978">Location</h5>
+     
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4476797729194!2d77.69646801744385!3d12.943180300000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14a532dbb109%3A0x5f329a80362e0998!2sMyntra%20Designs%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1658163844143!5m2!1sen!2sin" 
+      width="200" height="150" style="border:solid;border-color:rgb(46, 146, 227);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+   </div>
+  </div>
+  <hr class="mb-5 mt-5">
+ 
+    <a href="https://www.facebook.com/myntra/"><i class="bi bi-facebook" style="font-size:25px;color: #ffffff; padding: 9px;"></i></a>
+    <a href="https://www.instagram.com/myntra/?hl=en"><i class="bi bi-instagram" style="font-size:25px;color: #ffffff;padding: 9px;"></i></a>
+    <a href="https://twitter.com/myntra"><i  class="bi bi-twitter" style="font-size:25px;color: #ffffff;padding: 9px;"></i></a>
+    <a href="https://www.youtube.com/c/myntra"><i class="bi bi-youtube" style="font-size:25px;color: #ffffff;padding: 9px;"></i></a>
+    
+    <div class="row align-items-center mt-2">
+      
+          <p>Copyright ©️2022 All rights reserved by:
+              <a href="https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Fseninkokkodi&e=ATO7aviUh8lZVCp4w02SJyrO6I--KD4GGu4EbcHUWe7TabVWr1cgravSYVgPnUVOVjbsPyNd9x7q84suOcyur8GilvqwIALc4o033Fc&s=1" style="text-decoration:none;">
+                  <strong style="color:rgb(98, 210, 255);">Seninkokkodi</strong>
+              </a>
+          </p>
+      </div>
+   
+   </div>
+  </div>
+  </div>
+  </footer>
+</body>     
+</html>
+
+
